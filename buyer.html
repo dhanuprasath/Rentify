@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Page - Real Estate Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Buyer Page</h2>
+        <div id="filterSection">
+            <label for="filterPlace">Place:</label>
+            <input type="text" id="filterPlace" name="filterPlace">
+            <label for="filterBedrooms">Bedrooms:</label>
+            <input type="number" id="filterBedrooms" name="filterBedrooms">
+            <label for="filterBathrooms">Bathrooms:</label>
+            <input type="number" id="filterBathrooms" name="filterBathrooms">
+            <button onclick="applyFilters()">Apply Filters</button>
+        </div>
+        <h3>Available Properties</h3>
+        <div id="propertiesList"></div>
+    </div>
+
+    <script src="buyer.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Page - Real Estate Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Seller Page</h2>
+        <form id="propertyForm">
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" required>
+            <label for="area">Area (sq ft):</label>
+            <input type="number" id="area" name="area" required>
+            <label for="bedrooms">Number of Bedrooms:</label>
+            <input type="number" id="bedrooms" name="bedrooms" required>
+            <label for="bathrooms">Number of Bathrooms:</label>
+            <input type="number" id="bathrooms" name="bathrooms" required>
+            <label for="hospitals">Hospitals Nearby:</label>
+            <input type="text" id="hospitals" name="hospitals" required>
+            <label for="colleges">Colleges Nearby:</label>
+            <input type="text" id="colleges" name="colleges" required>
+            <button type="submit">Post Property</button>
+        </form>
+
+        <h3>Posted Properties</h3>
+        <div id="propertiesList"></div>
+    </div>
+
+    <script src="seller.js"></script>
+</body>
+</html>
